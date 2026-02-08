@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sahi Faisla</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+🌾 Sahi Faisla
+</header>
+
+<div class="container">
+
+<img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" class="avatar">
+
+<!-- DASHBOARD -->
+<div id="dashboard" class="card">
+<h3>Farmer Status</h3>
+
+<p>Savings: ₹<span id="savings"></span></p>
+<p>Debt: ₹<span id="debt"></span></p>
+<p>Season: <span id="season"></span></p>
+
+<p>Score: <span id="score"></span></p>
+
+<p id="storyText"></p>
+<p id="weatherText"></p>
+
+<p id="achievement"></p>
+
+
+<button onclick="startDecision()">Start Farming Decision</button>
+
+<pre id="leaderboardText"></pre>
+</div>
+
+<!-- DECISION -->
+<div id="decision" class="card hidden">
+<h3 id="decisionTitle"></h3>
+<div id="decisionOptions"></div>
+</div>
+
+<!-- SUMMARY -->
+<div id="summary" class="card hidden">
+<h3>Season Result</h3>
+<p id="summaryText"></p>
+<button onclick="restartGame()">Next Season</button>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
